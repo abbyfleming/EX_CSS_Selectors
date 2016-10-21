@@ -1,0 +1,83 @@
+
+body {
+	width: 60%;
+	margin: 0 auto;
+}
+
+/*The header element should have a 1px border. Color, you pick.*/
+
+header {
+	border: 1px solid #22C5D5;
+}
+
+/*Convert the ul in the navigation element into a series of horizontal links with # as the href value, without bullets, and have some space between them horizontally.*/
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav ul li a {
+	padding: 0 20px;
+}
+
+/*Elements with a class of promo should have bold text that is also colored gold.*/
+
+.promo {
+	font-weight: bold;
+	color: gold;
+}
+
+/*Any text inside an element with a class of "active" should be colored yellow.*/
+
+.active {
+	color:yellow;
+}
+
+/*Any text in an element with class "disabled" should be colored grey, unless it is inside an anchor tag. If inside an anchor, it should be colored purple.*/
+
+.disabled {
+	color: gray;
+}
+
+a .disabled {
+	color: purple;
+}
+
+/* Any h4 that is a direct child of grandparent should have a 1px border with rounded corners.*/
+
+.grandparent > h4 {
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+
+/*Make the "I'm red" text colored red
+Make the "I'm blue" text colored blue
+
+The sibling h4 of the red element should have a background color of red
+
+The sibling h4 of the blue element should have background color of blue*/
+
+.parent div:nth-child(1) {
+	color: red;
+}
+
+.parent h4:nth-child(2) {
+	background: red;
+}
+
+.parent div:nth-child(3) {
+	color: blue;
+}
+/*
+.parent div:nth-child(3) + h4 {
+	backbround: blue;
+}*/
+
+
+/*Without adding any other attributes to the input fields in the footer, write a CSS selector that makes any text input field have a height of 25px.*/
+
